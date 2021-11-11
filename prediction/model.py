@@ -4,28 +4,32 @@ import math
 class PUEForecast(torch.nn.Module):
     def __init__(self):
         super(PUEForecast, self).__init__()
+        self.d_model = 1024
         
         encoder_layer = torch.nn.TransformerEncoderLayer(
-            d_model=1024,
+            d_model=self.d_model,
             nhead=4,
             dropout=0.1,
-            dim_feedforward=4 * 1024,
+            dim_feedforward=8 * self.d_model,
         )
         decoder_layer = torch.nn.TransformerDecoderLayer(
-            d_model=1024,
+            d_model=self.d_model,
             nhead=4,
             dropout=0.1,
-            dim_feedforward=4 * 1024,
+            dim_feedforward=8 * self.d_model,
         )
 
-        self.pos_encoder = PositionalEncoding(1024)
+        self.pos_encoder = PositionalEncoding(self.d_model)
         self.encoder = torch.nn.TransformerEncoder(encoder_layer, num_layers=2)
         self.decoder = torch.nn.TransformerDecoder(decoder_layer, num_layers=2)
-        self.linear = torch.nn.Linear(1024, 1)
+        self.linear = torch.nn.Linear(self.d_model, 1)
 
     def forward(self, X, target_in):
+        # X, shape:[batch_size, 多少行, 每行多少特征]
+        X = self.pos_encoder(X)
         X = self.encoder(src=X) # * math.sqrt(self.d_model)
-        # input = self.pos_encoder(input)
+        
+        target_in = self.pos_encoder(target_in)
         output = self.decoder(tgt=target_in, memory=X)
         output = self.linear(output)
         return output
