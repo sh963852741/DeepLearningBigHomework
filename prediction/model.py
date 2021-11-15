@@ -4,7 +4,7 @@ import math
 class PUEForecast(torch.nn.Module):
     def __init__(self):
         super(PUEForecast, self).__init__()
-        self.d_model = 1024
+        self.d_model = 128
         
         encoder_layer = torch.nn.TransformerEncoderLayer(
             d_model=self.d_model,
@@ -24,15 +24,29 @@ class PUEForecast(torch.nn.Module):
         self.decoder = torch.nn.TransformerDecoder(decoder_layer, num_layers=2)
         self.linear = torch.nn.Linear(self.d_model, 1)
 
+
     def forward(self, X, target_in):
         # X, shape:[batch_size, 多少行, 每行多少特征]
         X = self.pos_encoder(X)
         X = self.encoder(src=X) # * math.sqrt(self.d_model)
         
         target_in = self.pos_encoder(target_in)
-        output = self.decoder(tgt=target_in, memory=X)
+        mask = gen_trg_mask(target_in.size(0))
+        output = self.decoder(tgt=target_in, memory=X, tgt_mask=mask)
         output = self.linear(output)
         return output
+
+def gen_trg_mask(length):
+    mask = torch.tril(torch.ones(length, length)) == 1
+
+    mask = (
+        mask.float()
+        .masked_fill(mask == 0, float("-inf"))
+        .masked_fill(mask == 1, float(0.0))
+    )
+
+    return mask
+
 
 class PositionalEncoding(torch.nn.Module):
 

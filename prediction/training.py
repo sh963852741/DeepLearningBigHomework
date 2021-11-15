@@ -14,7 +14,7 @@ torch.set_default_tensor_type(torch.DoubleTensor)
 
 from model import PUEForecast
 from pue_dataset import PUEDataset
-raw_dataframe = pandas.read_csv(".\\data\\pue.csv", encoding="gb2312")
+raw_dataframe = pandas.read_csv(".\\data\\pue.csv", encoding="gb2312").iloc[240:, :]
 raw_dataframe.dropna(inplace=True)
 # deleted_raw_dataframe = raw_dataframe.drop(raw_dataframe.columns[:106], axis=1)
 y_dataframe = raw_dataframe.pop(raw_dataframe.columns[-1])
@@ -26,11 +26,11 @@ raw_numpy = StandardScaler().fit_transform(raw_dataframe, y_dataframe)
 X_numpy_noselect = raw_numpy[:, :64]
 X_numpy_toSelect = raw_numpy[:, 64:]
 y_numpy = y_dataframe.to_numpy().reshape((-1))
-X_numpy_selected = SelectKBest(f_regression, k=1024-64).fit_transform(X=X_numpy_toSelect,y=y_numpy)
+X_numpy_selected = SelectKBest(f_regression, k=128-64).fit_transform(X=X_numpy_toSelect,y=y_numpy)
 y_numpy = y_numpy.reshape((-1, 1))
 X_numpy = np.hstack((X_numpy_noselect, X_numpy_selected))
 
-train_X_numpy, test_X_numpy, train_y_numpy, test_y_numpy  = train_test_split(X_numpy, y_numpy, test_size= 0.2)
+train_X_numpy, test_X_numpy, train_y_numpy, test_y_numpy = train_test_split(X_numpy, y_numpy, test_size=0.2, shuffle=False)
 # test_X_numpy = np.random.rand(455, 1024) * 100
 train_dataset = PUEDataset(
     torch.from_numpy(train_X_numpy), torch.from_numpy(train_y_numpy))

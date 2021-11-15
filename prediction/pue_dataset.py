@@ -7,7 +7,7 @@ EOS = numpy.zeros
 
 
 class PUEDataset(Dataset):
-    def __init__(self, X: numpy.ndarray, y: numpy.ndarray, src_size: int = 1):
+    def __init__(self, X: numpy.ndarray, y: numpy.ndarray, src_size: int = 8):
         if(X.shape[0] != y.shape[0]):
             raise Exception("长度不一致")
         self.source = X
