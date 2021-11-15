@@ -43,8 +43,8 @@ model = PUEForecast()
 
 # loss_fn = torch.nn.SmoothL1Loss()
 
-loss_fn1 = torch.nn.CrossEntropyLoss()
-loss_fn2 = torch.nn.SmoothL1Loss()
+loss_fn1 = torch.nn.CrossEntropyLoss(label_smoothing = 0.1)
+loss_fn2 = torch.nn.SmoothL1Loss(label_smoothing = 0.1)
 
 optimizer = torch.optim.Adam(model.parameters(), lr=1e-4)
 
@@ -65,7 +65,7 @@ def train(dataloader: DataLoader, model: torch.nn.Module, loss_fn1: _Loss, loss_
         pred, pue = model(X, target_in)
 
         loss1 = loss_fn1(pred, target_out)
-        loss2 = loss_fn2(pue, target_out_pue)
+        loss2 = loss_fn2(pue,target_out_pue)
         loss = loss1 + loss2
         optimizer.zero_grad()
         loss.backward()
