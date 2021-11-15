@@ -22,7 +22,11 @@ class PUEForecast(torch.nn.Module):
         self.pos_encoder = PositionalEncoding(self.d_model)
         self.encoder = torch.nn.TransformerEncoder(encoder_layer, num_layers=2)
         self.decoder = torch.nn.TransformerDecoder(decoder_layer, num_layers=2)
-        self.linear = torch.nn.Linear(self.d_model, 1)
+        self.linear = torch.nn.Linear(self.d_model, self.d_model)
+
+        self.MLPLinear1 = torch.nn.Linear(self.d_model, self.d_model * 4)
+        self.relu = torch.nn.ReLU()
+        self.MLPLinear2 = torch.nn.Linear(self.d_model * 4, 1)
 
 
     def forward(self, X, target_in):
@@ -34,7 +38,8 @@ class PUEForecast(torch.nn.Module):
         mask = gen_trg_mask(target_in.size(0))
         output = self.decoder(tgt=target_in, memory=X, tgt_mask=mask)
         output = self.linear(output)
-        return output
+        pue = self.MLPLinear2(self.relu(self.MLPLinear1(output)))
+        return output, pue
 
 def gen_trg_mask(length):
     mask = torch.tril(torch.ones(length, length)) == 1

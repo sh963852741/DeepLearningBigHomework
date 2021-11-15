@@ -41,22 +41,32 @@ test_dataloader = DataLoader(test_dataset, batch_size=16)
 
 model = PUEForecast()
 
-loss_fn = torch.nn.SmoothL1Loss()
+# loss_fn = torch.nn.SmoothL1Loss()
+
+loss_fn1 = torch.nn.CrossEntropyLoss(label_smoothing = 0.1)
+loss_fn2 = torch.nn.SmoothL1Loss(label_smoothing = 0.1)
+
 optimizer = torch.optim.Adam(model.parameters(), lr=1e-4)
 
 
-def train(dataloader: DataLoader, model: torch.nn.Module, loss_fn: _Loss, optimizer: torch.optim.Optimizer):
+def train(dataloader: DataLoader, model: torch.nn.Module, loss_fn1: _Loss, loss_fn2: _Loss, optimizer: torch.optim.Optimizer):
     size = len(dataloader.dataset)
     model.train()
-    for batch, (X, target_in, target_out) in enumerate(dataloader):
+    for batch, (X, target_in, target_out, target_out_pue) in enumerate(dataloader):
         # X, y = X.to(device), y.to(device)
 
         # X, shape[batch_size, 有几行, 每行有多少特征]
         # target_in, shape[batch_size, 2, 1]
-        # target_out, shape[batch_size, 2, 1]
-        pred = model(X, target_in)
-        loss = loss_fn(pred, target_out)
 
+
+        # target_out, shape[batch_size, 2, 128] pue之前的特征值
+        # target_out_pue, shape[batch_size, 2, 1] pue值
+
+        pred, pue = model(X, target_in)
+
+        loss1 = loss_fn1(pred, target_out)
+        loss2 = loss_fn2(pue,target_out_pue)
+        loss = loss1 + loss2
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
@@ -65,7 +75,7 @@ def train(dataloader: DataLoader, model: torch.nn.Module, loss_fn: _Loss, optimi
             loss, current = loss.item(), batch * len(X)
             print(f"loss: {loss:>7f}  [{current:>5d}/{size:>5d}]")
 
-train(train_dataloader, model, loss_fn, optimizer)
+train(train_dataloader, model, loss_fn1, loss_fn2, optimizer)
 
 def test(dataloader: DataLoader, model: torch.nn.Module, loss_fn: _Loss):
     plot.figure()
