@@ -91,8 +91,8 @@ def test(dataloader: DataLoader, model: torch.nn.Module, loss_fn: _Loss):
             # X, y = X.to(device), y.to(device)
 
             # pred, shape:[batch_size, (BOS+pue=2), 1]
-            pred = model(X, target_in)
-            test_loss += loss_fn(pred, target_out).item()
+            pred, pue = model(X, target_in)
+            test_loss += loss_fn(pue, target_out).item()
 
             for i in range(0, pred.shape[0]):
                 y_axis_predict.append(pred[i][0][0])
@@ -106,6 +106,6 @@ def test(dataloader: DataLoader, model: torch.nn.Module, loss_fn: _Loss):
     plot.plot([x for x in range(0, len(y_axis_real))], y_axis_real)
     plot.show()
 
-test(test_dataloader, model, loss_fn)
+test(test_dataloader, model, loss_fn2)
 
 torch.save(model, ".\\dist\\neural_network_model.pkl") 

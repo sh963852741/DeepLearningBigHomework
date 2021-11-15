@@ -28,7 +28,7 @@ X_numpy_toSelect = raw_numpy[:, 64:]
 y_numpy = y_dataframe.to_numpy().reshape((-1))
 
 # X_numpy_selected = pca.fit_transform(X_numpy_toSelect)
-X_numpy_selected = SelectKBest(mutual_info_regression, k=128-64).fit_transform(X=X_numpy_toSelect, y=y_numpy)
+X_numpy_selected = SelectKBest(f_regression, k=128-64).fit_transform(X=X_numpy_toSelect, y=y_numpy)
 X_numpy = np.hstack((X_numpy_noselect, X_numpy_selected))
 train_X_numpy, test_X_numpy, train_y_numpy, test_y_numpy = train_test_split(X_numpy, y_numpy, test_size=0.2, shuffle=False) # X_numpy[:-400], X_numpy[-400:], y_numpy[:-400], y_numpy[-400:]
 
