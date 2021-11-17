@@ -43,8 +43,8 @@ model = PUEForecast()
 
 # loss_fn = torch.nn.SmoothL1Loss()
 
-loss_fn1 = torch.nn.CrossEntropyLoss(label_smoothing = 0.1)
-loss_fn2 = torch.nn.SmoothL1Loss(label_smoothing = 0.1)
+loss_fn1 = torch.nn.CrossEntropyLoss()
+loss_fn2 = torch.nn.SmoothL1Loss()
 
 optimizer = torch.optim.Adam(model.parameters(), lr=1e-4)
 

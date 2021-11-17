@@ -24,6 +24,7 @@ class PUEDataset(Dataset):
         target_in = self.source[index + self.src_size: index + self.src_size + 1]
         target_in = numpy.insert(target_in, 0, BOS((self.source.shape[1])), axis=0)  # shape:[2, 1024]
         pue = self.target[index + self.src_size: index + self.src_size + 1]
+        pue = numpy.insert(pue, 1, EOS((1)), axis=0)
         target_out = self.source[index + self.src_size: index + self.src_size + 1]
         target_out = numpy.insert(target_out, 1, EOS((self.source.shape[1])), axis=0)  # shape:[2, 1024]
         return torch.tensor(source), torch.tensor(target_in), torch.tensor(target_out), torch.tensor(pue)
