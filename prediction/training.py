@@ -43,7 +43,7 @@ model = PUEForecast()
 
 # loss_fn = torch.nn.SmoothL1Loss()
 
-loss_fn1 = torch.nn.CrossEntropyLoss()
+loss_fn1 = torch.nn.MSELoss()
 loss_fn2 = torch.nn.SmoothL1Loss()
 
 optimizer = torch.optim.Adam(model.parameters(), lr=1e-4)
@@ -87,17 +87,17 @@ def test(dataloader: DataLoader, model: torch.nn.Module, loss_fn: _Loss):
     model.eval()
     test_loss, correct = 0, np.nan
     with torch.no_grad():
-        for X, target_in, target_out in dataloader:
+        for X, target_in, target_out, target_out_pue in dataloader:
             # X, y = X.to(device), y.to(device)
 
             # pred, shape:[batch_size, (BOS+pue=2), 1]
             pred, pue = model(X, target_in)
-            test_loss += loss_fn(pue, target_out).item()
+            test_loss += loss_fn(pue, target_out_pue).item()
 
             for i in range(0, pred.shape[0]):
                 y_axis_predict.append(pred[i][0][0])
-                y_axis_real.append(target_out[i][0][0])
-                print(f"predict: {pred[i][0][0]}\treal: {target_out[i][0][0]}")
+                y_axis_real.append(target_out_pue[i][0][0])
+                print(f"predict: {pred[i][0][0]}\treal: {target_out_pue[i][0][0]}")
     test_loss /= num_batches
     # correct /= size
     print(f"Test Error: \n Accuracy: {(100*correct):>0.1f}%, Avg loss: {test_loss:>8f} \n")
