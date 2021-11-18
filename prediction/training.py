@@ -1,3 +1,5 @@
+import math
+
 import numpy as np
 import pandas
 import torch
@@ -14,7 +16,7 @@ torch.set_default_tensor_type(torch.DoubleTensor)
 
 from model import PUEForecast
 from pue_dataset import PUEDataset
-raw_dataframe = pandas.read_csv(".\\data\\pue.csv", encoding="gb2312").iloc[240:, :]
+raw_dataframe = pandas.read_csv("../data/pue.csv", encoding="gb2312").iloc[240:, :]
 raw_dataframe.dropna(inplace=True)
 # deleted_raw_dataframe = raw_dataframe.drop(raw_dataframe.columns[:106], axis=1)
 y_dataframe = raw_dataframe.pop(raw_dataframe.columns[-1])
@@ -43,8 +45,11 @@ model = PUEForecast()
 
 # loss_fn = torch.nn.SmoothL1Loss()
 
-loss_fn1 = torch.nn.MSELoss()
-loss_fn2 = torch.nn.SmoothL1Loss()
+
+
+# loss_fn1 = SmoothedCrossEntropyLoss(smoothing = 0.1)
+loss_fn1 = torch.nn.SmoothL1Loss()
+loss_fn2 = torch.nn.HuberLoss()
 
 optimizer = torch.optim.Adam(model.parameters(), lr=1e-4)
 
@@ -52,28 +57,30 @@ optimizer = torch.optim.Adam(model.parameters(), lr=1e-4)
 def train(dataloader: DataLoader, model: torch.nn.Module, loss_fn1: _Loss, loss_fn2: _Loss, optimizer: torch.optim.Optimizer):
     size = len(dataloader.dataset)
     model.train()
-    for batch, (X, target_in, target_out, target_out_pue) in enumerate(dataloader):
-        # X, y = X.to(device), y.to(device)
+    for epoch in range(10):
+        print(f"epoch: {epoch:>5d}")
+        for batch, (X, target_in, target_out, target_out_pue) in enumerate(dataloader):
+            # X, y = X.to(device), y.to(device)
 
-        # X, shape[batch_size, 有几行, 每行有多少特征]
-        # target_in, shape[batch_size, 2, 1]
+            # X, shape[batch_size, 有几行, 每行有多少特征]
+            # target_in, shape[batch_size, 2, 1]
 
 
-        # target_out, shape[batch_size, 2, 128] pue之前的特征值
-        # target_out_pue, shape[batch_size, 2, 1] pue值
+            # target_out, shape[batch_size, 2, 128] pue之前的特征值
+            # target_out_pue, shape[batch_size, 2, 1] pue值
 
-        pred, pue = model(X, target_in)
+            pred, pue = model(X, target_in)
 
-        loss1 = loss_fn1(pred, target_out)
-        loss2 = loss_fn2(pue,target_out_pue)
-        loss = loss1 + loss2
-        optimizer.zero_grad()
-        loss.backward()
-        optimizer.step()
+            loss1 = loss_fn1(pred, target_out)
+            loss2 = loss_fn2(pue,target_out_pue)
+            loss = 0.1 * loss1 + 2 * loss2
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
 
-        if batch % 10 == 0:
-            loss, current = loss.item(), batch * len(X)
-            print(f"loss: {loss:>7f}  [{current:>5d}/{size:>5d}]")
+            if batch % 10 == 0:
+                loss, current = loss.item(), batch * len(X)
+                print(f"loss: {loss:>7f}  [{current:>5d}/{size:>5d}]")
 
 train(train_dataloader, model, loss_fn1, loss_fn2, optimizer)
 
@@ -95,9 +102,9 @@ def test(dataloader: DataLoader, model: torch.nn.Module, loss_fn: _Loss):
             test_loss += loss_fn(pue, target_out_pue).item()
 
             for i in range(0, pred.shape[0]):
-                y_axis_predict.append(pred[i][0][0])
+                y_axis_predict.append(pue[i][0][0])
                 y_axis_real.append(target_out_pue[i][0][0])
-                print(f"predict: {pred[i][0][0]}\treal: {target_out_pue[i][0][0]}")
+                print(f"predict: {pue[i][0][0]}\treal: {target_out_pue[i][0][0]}")
     test_loss /= num_batches
     # correct /= size
     print(f"Test Error: \n Accuracy: {(100*correct):>0.1f}%, Avg loss: {test_loss:>8f} \n")
@@ -108,4 +115,4 @@ def test(dataloader: DataLoader, model: torch.nn.Module, loss_fn: _Loss):
 
 test(test_dataloader, model, loss_fn2)
 
-torch.save(model, ".\\dist\\neural_network_model.pkl") 
+torch.save(model, "./dist/neural_network_model.pkl")
