@@ -29,8 +29,8 @@ class PUEEnviroment(object):
         row = np.hstack((self.current_action, row))
 
         pred = self.model.predict([row])
-        reward = pred[0] - self.y[self.current_position]
-        reward *= 100
+        reward = self.y[self.current_position] - pred[0]
+        reward *= 10000
         # self.current_position += 1
         if(self.current_position == self.X.shape[0]):
             return None, reward, True, None

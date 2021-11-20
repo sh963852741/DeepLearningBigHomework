@@ -25,17 +25,18 @@ tf.disable_v2_behavior()
 import numpy as np
 import gym
 import time
+import matplotlib.pyplot as plot
 
 
 #####################  hyper parameters  ####################
 
-MAX_EPISODES = 200
-MAX_EP_STEPS = 2000
+MAX_EPISODES = 50
+MAX_EP_STEPS = 500
 ACTION_LEARNING_RATE = 0.001    # learning rate for actor
 CRITIC_LEARNING_RATE = 0.002    # learning rate for critic
 GAMMA = 0.9     # reward discount
 TAU = 0.01      # soft replacement
-MEMORY_CAPACITY = 1000
+MEMORY_CAPACITY = 2000
 BATCH_SIZE = 32
 
 RENDER = False
@@ -146,6 +147,9 @@ from reinforcement.environment import PUEEnviroment
 # action_dim = env.action_space.shape[0]
 # action_bound = env.action_space.high
 
+def test(i):
+    return np.full((64), i)
+
 env = PUEEnviroment(".\\dist\\machine_gbr.pkl")
 
 state_dim = 256 -64
@@ -159,14 +163,17 @@ t1 = time.time()
 for i in range(MAX_EPISODES):
     state = env.reset()
     ep_reward = 0
+    reward_arr = []
     for j in range(MAX_EP_STEPS):
         if RENDER:
             env.render()
 
         # Add exploration noise
-        action = ddpg.choose_action(state)
-        action = np.clip(np.random.normal(action, var), 20, 25)    # add randomness to action selection for exploration
+        action = test(j)# ddpg.choose_action(state)
+        
+        # action = np.clip(np.random.normal(action, var), 10, 40)    # add randomness to action selection for exploration
         s_, reward, done, info = env.step(action)
+        reward_arr.append(reward)
 
         # ddpg.store_transition(state, action, reward / 10, s_)
         ddpg.store_transition(state, action, reward, s_)
@@ -178,8 +185,10 @@ for i in range(MAX_EPISODES):
         state = s_
         ep_reward += reward
         if j == MAX_EP_STEPS-1:
-            print('Episode:', i, ' Reward: %i' % int(ep_reward), 'Explore: %.2f' % var, )
+            print('Episode:', i, ' Reward: %f' % ep_reward, 'Explore: %.2f' % var, )
             # if ep_reward > -300:RENDER = True
             break
+    plot.plot(range(MAX_EP_STEPS),reward_arr)
+    plot.show()
 
 print('Running time: ', time.time() - t1)

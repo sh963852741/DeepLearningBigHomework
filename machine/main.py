@@ -20,8 +20,8 @@ raw_dataframe.dropna(inplace=True)
 y_dataframe = raw_dataframe.pop(raw_dataframe.columns[-1])
 # 删除时间戳
 # raw_dataframe.pop(raw_dataframe.columns[-1])
-# raw_numpy = raw_dataframe.to_numpy()
-raw_numpy = StandardScaler().fit_transform(raw_dataframe, y_dataframe)
+raw_numpy = raw_dataframe.to_numpy()
+# raw_numpy = StandardScaler().fit_transform(raw_dataframe, y_dataframe)
 # 前64个维度不参与筛选
 X_numpy_noselect = raw_numpy[:, :64]
 X_numpy_toSelect = raw_numpy[:, 64:]
@@ -32,7 +32,7 @@ X_numpy_selected = SelectKBest(f_regression, k=256-64).fit_transform(X=X_numpy_t
 X_numpy = np.hstack((X_numpy_noselect, X_numpy_selected))
 train_X_numpy, test_X_numpy, train_y_numpy, test_y_numpy = train_test_split(X_numpy, y_numpy, test_size=0.2, shuffle=False) # X_numpy[:-400], X_numpy[-400:], y_numpy[:-400], y_numpy[-400:]
 
-# np.savez(".\\data\\precessed_data.npz",x= X_numpy, y=y_numpy)
+np.savez(".\\data\\precessed_data.npz",x= X_numpy, y=y_numpy)
 # test_X_numpy = random.rand(455, 256) * 100
 knn = neighbors.KNeighborsRegressor(10, weights="uniform")
 knn.fit(train_X_numpy, train_y_numpy)

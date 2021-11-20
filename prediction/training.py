@@ -14,7 +14,7 @@ torch.set_default_tensor_type(torch.DoubleTensor)
 
 from model import PUEForecast
 from pue_dataset import PUEDataset
-raw_dataframe = pandas.read_csv(".\\data\\pue.csv", encoding="gb2312").iloc[240:, :]
+raw_dataframe = pandas.read_csv(".\\data\\pue.csv", encoding="gb2312")
 raw_dataframe.dropna(inplace=True)
 # deleted_raw_dataframe = raw_dataframe.drop(raw_dataframe.columns[:106], axis=1)
 y_dataframe = raw_dataframe.pop(raw_dataframe.columns[-1])
