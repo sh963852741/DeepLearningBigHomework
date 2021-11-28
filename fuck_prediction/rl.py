@@ -30,14 +30,14 @@ import matplotlib.pyplot as plot
 
 #####################  hyper parameters  ####################
 
-MAX_EPISODES = 50
-MAX_EP_STEPS = 500
+MAX_EPISODES = 20
+MAX_EP_STEPS = 2000 # 5000
 ACTION_LEARNING_RATE = 0.001    # learning rate for actor
 CRITIC_LEARNING_RATE = 0.002    # learning rate for critic
 GAMMA = 0.9     # reward discount
 TAU = 0.01      # soft replacement
-MEMORY_CAPACITY = 2000
-BATCH_SIZE = 32
+MEMORY_CAPACITY = 10000
+BATCH_SIZE = 64
 
 RENDER = False
 ENV_NAME = 'Pendulum-v1'
@@ -146,49 +146,87 @@ from reinforcement.environment import PUEEnviroment
 # state_dim = env.observation_space.shape[0]
 # action_dim = env.action_space.shape[0]
 # action_bound = env.action_space.high
+def clip_arr(arr):
+    r = []
+    for index in range(0, len(arr)):
+        if index in [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 53, 55, 57, 59, 61, 63]:
+            r.append(np.clip(arr[index],20,25))
+        elif index in [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47, 49, 51, 52, 54, 56, 58, 60, 62]:
+            r.append(np.clip(arr[index],35,65))
+        else:
+            r.append(np.clip(arr[index],-50,50))
+    return np.array(r)
 
 def test(i):
     return np.full((64), i)
 
 env = PUEEnviroment(".\\dist\\machine_gbr.pkl")
 
-state_dim = 256 -64
-action_dim = 64
-action_bound = [30 for x in range(0,64)]
+state_dim = 256
+action_dim = 256
+action_bound = [30 for x in range(0,256)]
 
-ddpg = DDPG(action_dim, state_dim, action_bound)
 
-var = 10  # control exploration
+csv_file = open(".\\dist\\console.csv", 'a')
+file = open(".\\dist\\console.txt", 'a')
 t1 = time.time()
-for i in range(MAX_EPISODES):
-    state = env.reset()
-    ep_reward = 0
-    reward_arr = []
-    for j in range(MAX_EP_STEPS):
-        if RENDER:
-            env.render()
-
-        # Add exploration noise
-        action = test(j)# ddpg.choose_action(state)
+file.write(f"=========={t1}==========")
+file.write('\n')
+for row_index in range(20):
+    var = 20  # control exploration
+    real_value, predict_value = env.set_row(row_index)
+    min_pred = 100
+    action_min = []
+    tf.reset_default_graph()
+    ddpg = DDPG(action_dim, state_dim, action_bound)
+    for i in range(MAX_EPISODES):
+        state = env.reset()
         
-        # action = np.clip(np.random.normal(action, var), 10, 40)    # add randomness to action selection for exploration
-        s_, reward, done, info = env.step(action)
-        reward_arr.append(reward)
+        ep_reward = 0
+        reward_arr = []
+        for j in range(MAX_EP_STEPS):
+            if RENDER:
+                env.render()
 
-        # ddpg.store_transition(state, action, reward / 10, s_)
-        ddpg.store_transition(state, action, reward, s_)
+            # Add exploration noise
+            # action = test(j)
+            action = ddpg.choose_action(state)
+            
+            action = clip_arr(np.random.normal(action, var))    # add randomness to action selection for exploration
+            s_, reward, done, info,_ = env.step(action)
+            reward_arr.append(reward)
 
-        if ddpg.pointer > MEMORY_CAPACITY:
-            var *= .9995    # decay the action randomness
-            ddpg.learn()
+            # ddpg.store_transition(state, action, reward / 10, s_)
+            ddpg.store_transition(state, action, reward, s_)
 
-        state = s_
-        ep_reward += reward
-        if j == MAX_EP_STEPS-1:
-            print('Episode:', i, ' Reward: %f' % ep_reward, 'Explore: %.2f' % var, )
-            # if ep_reward > -300:RENDER = True
-            break
-    plot.plot(range(MAX_EP_STEPS),reward_arr)
-    plot.show()
+            if ddpg.pointer > MEMORY_CAPACITY:
+                var *= .9999    # decay the action randomness
+                ddpg.learn()
 
+            state = s_
+            ep_reward += reward
+            if j == MAX_EP_STEPS-1:
+                action = ddpg.choose_action(state)
+                action = clip_arr(np.random.normal(action, var))
+                _,reward,_,_,pred = env.step(action)
+                if(pred < min_pred): 
+                    min_pred = pred[0]
+                    action_min = action[:64]
+                print('Predict: %f' % pred[0], ' Episode:', i, ' Reward: %f' % reward, 'Explore: %.2f' % var, )
+                # if ep_reward > -300:RENDER = True
+                break
+        # plot.plot(range(MAX_EP_STEPS),reward_arr)
+        # plot.show()
+    
+    print(f"原始值：{real_value}\t最初预测值：{predict_value}\t最小预测值：{min_pred}") 
+    print(action_min)
+    file.write(f"原始值：{real_value}\t最初预测值：{predict_value}\t最小预测值：{min_pred}\n")
+    file.write(str(action_min))
+    file.write("\n")
+    csv_file.write(f"{real_value},{predict_value},{min_pred}")
+    for value in action_min:
+        csv_file.write(f"{value},")
+    csv_file.write("\n")
+file.close()
+csv_file.close()
 print('Running time: ', time.time() - t1)

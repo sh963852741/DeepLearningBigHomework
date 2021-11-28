@@ -14,6 +14,18 @@ from tensorflow.python.keras.backend import dropout
 BATCH_SIZE = 16
 
 raw_dataframe = pandas.read_csv(".\\data\\pue.csv", encoding="gb2312") # .iloc[240:, :]
+_1 = []
+_2 = []
+i = 0
+for title in raw_dataframe.columns:
+    if '温度' in title:
+        _1.append(i)
+    elif '湿度' in title:
+        _2.append(i)
+    i += 1
+    if i==64: break
+print(_1)
+print(_2)
 raw_dataframe.dropna(inplace=True)
 # px =raw_dataframe.iloc[:,-2].to_numpy()
 # py =raw_dataframe.iloc[:,-1].to_numpy()

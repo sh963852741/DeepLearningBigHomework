@@ -1,0 +1,968 @@
+ 20.         35.         25.         35.         20.         35.
+ 20.         35.         20.         35.         20.         35.
+ 25.         35.         25.         35.         20.         35.
+ 20.         35.         20.         35.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         25.         10.         10.
+ 10.         29.69924943 10.         30.11535523 10.         10.
+ 10.         30.04181295 10.         30.18088866 30.16204524 29.92069533
+ 29.89265627 29.8770771  10.         30.13430117 30.14299526 10.
+ 30.17643487 10.         10.         29.97908205 29.72891602 10.
+ 10.         30.0180797  10.         30.4734042  10.         30.29092531
+ 10.         10.         10.         29.88281053 29.81900089 10.
+ 10.         10.         10.         30.25643035 10.         29.81802546
+ 29.9564111  10.         10.         30.43812582 10.         10.
+ 29.77820174 29.8424138  10.         30.04394483 29.6691921  29.58790891
+ 10.         10.         10.         10.         29.63562204 29.97679327
+ 10.         29.47228925 30.13251497 10.         30.04999567 29.74249087
+ 30.23727688 29.65718563 30.11883048 10.         10.         29.84583665
+ 10.         10.         29.85625326 10.         10.         29.48204333
+ 10.         10.         29.76561148 10.         30.41548483 29.52718635
+ 30.15258546 10.         30.42721334 10.         29.67727572 10.
+ 29.49722174 30.20610186 30.32498261 10.         30.43477312 10.
+ 30.21390555 29.69972145 10.         29.82583651 10.         10.
+ 10.         30.42921873 29.85405306 10.         10.         30.10433797
+ 10.         10.         10.         29.91556448 10.         10.
+ 30.18621573 30.21931844 10.         10.         10.         10.
+ 30.29263625 10.         10.         10.         10.         29.99434078
+ 30.17040907 10.         10.         30.24598043 10.         10.
+ 10.         29.57648194 29.66140042 10.         30.70890538 30.28632839
+ 10.         29.70795203 29.56041713 10.         10.         10.
+ 10.         30.1665481  29.81564046 10.         10.         10.
+ 29.95607988 10.         29.80654451 10.         30.01641508 10.
+ 10.         10.         10.         10.         30.07839248 10.
+ 29.86606307 10.         10.         10.         10.         10.
+ 10.         10.         29.8506519  10.         10.         10.
+ 29.91905006 10.         29.99320457 29.87433623 30.09091819 29.70506758
+ 10.         10.         10.         29.93661672 10.         30.38641448
+ 30.45135294 10.         10.         29.73842459] pred: [1.56634057]
+Episode: 9  Reward: -251057.680597 Explore: 0.25
+action:[35.         20.         35.         20.         35.         25.
+ 35.         25.         35.         25.         35.         20.
+ 35.         25.         35.         25.         35.         25.
+ 35.         25.         35.         25.         35.         25.
+ 25.         35.         25.         35.         25.         35.
+ 20.         35.         25.         35.         20.         35.
+ 20.         35.         25.         35.         20.         35.
+ 25.         35.         25.         35.         20.         35.
+ 20.         35.         20.         35.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         25.         10.         10.
+ 10.         29.9707467  10.         29.92766009 10.         10.
+ 10.         30.15523533 10.         10.         30.14658528 30.08553104
+ 29.95754475 30.04928449 10.         29.92643561 30.02025037 29.89771294
+ 10.         10.         10.         29.99277902 30.14255971 10.
+ 30.10133566 10.         10.         30.29754683 10.         30.08089362
+ 10.         10.         10.         30.15009196 29.93166372 10.
+ 10.         10.         10.         29.88277542 29.9748455  30.11787094
+ 29.93754276 10.         10.         29.93288629 29.99466133 10.
+ 30.12600892 10.         10.         29.92833919 30.16273765 30.09869312
+ 10.         30.13104191 10.         10.         30.13453619 29.86313944
+ 10.         30.30731146 29.99819424 10.         10.         29.92195313
+ 30.06087307 30.05010102 30.02626755 10.         10.         29.76201348
+ 10.         30.06707609 30.0171861  10.         10.         29.89856306
+ 10.         30.17810493 29.72883515 10.         30.16609007 10.
+ 29.81095993 10.         10.         10.         10.         10.
+ 29.77592946 10.         30.11880159 10.         29.90123149 10.
+ 30.05238098 29.90777198 10.         30.09586496 10.         10.
+ 10.         29.79193234 29.96191836 10.         10.         30.06759676
+ 29.96405831 30.01594648 10.         29.90822036 10.         10.
+ 30.05187977 29.77525004 10.         10.         10.         30.1136459
+ 29.83131307 10.         10.         10.         10.         10.
+ 30.28531312 10.         10.         29.9348416  10.         29.92056311
+ 10.         29.85639632 30.14749946 10.         10.         30.01805465
+ 10.         30.06208399 10.         10.         10.         10.
+ 10.         30.22986781 30.30146876 10.         10.         10.
+ 30.10173828 10.         10.         10.         30.06258306 10.
+ 10.         10.         10.         10.         29.80546123 10.
+ 30.23023418 10.         10.         10.         10.         10.
+ 10.         10.         29.89416204 10.         10.         29.74369378
+ 10.         10.         29.9904359  30.08921844 29.86971524 10.
+ 10.         10.         10.         30.44841286 10.         29.92113372
+ 30.44065323 10.         10.         30.14279524] pred: [1.56634057]
+Episode: 10  Reward: -251057.680597 Explore: 0.15
+action:[35.         20.         35.         20.         35.         25.
+ 35.         25.         35.         25.         35.         20.
+ 35.         25.         35.         25.         35.         25.
+ 35.         25.         35.         25.         35.         25.
+ 25.         35.         25.         35.         25.         35.
+ 20.         35.         25.         35.         20.         35.
+ 20.         35.         25.         35.         20.         35.
+ 25.         35.         25.         35.         20.         35.
+ 20.         35.         20.         35.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         25.         10.         10.
+ 10.         29.88471577 10.         29.96863885 10.         10.
+ 10.         29.97802566 10.         10.         30.03676899 29.98464564
+ 29.9452194  29.87406426 10.         29.91285685 30.06026007 30.00900413
+ 10.         10.         10.         30.0169564  30.00230255 10.
+ 29.97799851 10.         10.         29.85673434 10.         30.0596039
+ 10.         10.         10.         29.95648986 29.91917324 10.
+ 10.         10.         10.         30.02180394 30.05244255 30.05335593
+ 29.60713964 10.         10.         29.92635342 29.9303766  10.
+ 30.06728966 10.         10.         30.01923744 30.11634388 29.93397489
+ 10.         30.02374871 10.         10.         30.08150646 30.11639762
+ 10.         29.92974985 30.06821761 10.         10.         30.0289892
+ 29.89424576 29.91740127 29.99415537 10.         10.         29.90853274
+ 10.         29.97855814 30.08060052 10.         10.         30.04140996
+ 10.         30.03945307 29.97601806 10.         30.12993291 10.
+ 29.9716202  10.         10.         10.         10.         10.
+ 29.99666673 10.         30.02819889 10.         29.86707769 10.
+ 30.02978255 29.93020399 10.         29.99690477 10.         10.
+ 10.         30.0287805  29.813939   10.         10.         29.86050626
+ 29.96945394 29.87681203 10.         29.90397775 10.         10.
+ 30.09878632 29.98049833 10.         10.         10.         30.0538213
+ 29.91949743 10.         10.         10.         10.         10.
+ 29.95195056 10.         10.         29.8734473  10.         30.08979827
+ 10.         29.93301743 29.99160566 10.         10.         29.91873376
+ 10.         29.98978717 10.         10.         10.         10.
+ 10.         29.99484209 30.07719233 10.         10.         10.
+ 30.00540803 10.         10.         10.         30.10620411 10.
+ 10.         10.         10.         10.         29.99451712 10.
+ 29.96298944 10.         10.         10.         10.         10.
+ 10.         10.         29.86924211 10.         10.         29.9888964
+ 10.         10.         29.88057714 29.94192176 29.85536264 10.
+ 10.         10.         10.         29.95333922 10.         30.04300483
+ 29.97598458 10.         10.         30.01657875] pred: [1.56634057]
+Episode: 11  Reward: -251057.680597 Explore: 0.09
+action:[35.         20.         35.         20.         35.         25.
+ 35.         25.         35.         25.         35.         20.
+ 35.         25.         35.         25.         35.         25.
+ 35.         25.         35.         25.         35.         25.
+ 25.         35.         25.         35.         25.         35.
+ 20.         35.         25.         35.         20.         35.
+ 20.         35.         25.         35.         20.         35.
+ 25.         35.         25.         35.         20.         35.
+ 20.         35.         20.         35.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         25.         10.         10.
+ 10.         29.90752272 10.         29.97811724 10.         10.
+ 10.         30.01059172 10.         10.         29.94951093 29.98756432
+ 29.90556488 30.00618681 10.         30.0393903  29.97824584 30.00295893
+ 10.         10.         10.         30.04354819 29.94961    10.
+ 30.05079074 10.         10.         29.98116352 10.         29.94622692
+ 10.         10.         10.         29.99438245 30.0159312  10.
+ 10.         10.         10.         29.98956463 29.99559058 30.07188895
+ 30.04342929 10.         10.         30.00586041 30.03266945 10.
+ 30.0293246  10.         10.         30.01983771 30.0152471  30.02121134
+ 10.         30.05073201 10.         10.         30.03082093 30.03682441
+ 10.         30.04409452 30.03293791 10.         10.         30.05012182
+ 29.93603751 29.98753869 30.09060356 10.         10.         29.98817433
+ 10.         30.06561379 29.99608557 10.         10.         29.97073638
+ 10.         30.06263335 29.95759948 10.         30.06802217 10.
+ 30.00987247 10.         10.         10.         10.         10.
+ 30.01000244 10.         29.88971722 10.         30.11676147 10.
+ 30.09187553 30.02120807 10.         30.0549461  10.         10.
+ 10.         30.02805366 30.04427781 10.         10.         30.00808382
+ 29.91506786 30.0564665  10.         29.88496024 10.         10.
+ 29.95363645 29.97490522 10.         10.         10.         30.10994333
+ 30.03219947 10.         10.         10.         10.         10.
+ 30.02580919 10.         10.         30.04688362 10.         29.99843864
+ 10.         30.02358142 30.00020945 10.         10.         29.97889071
+ 10.         29.93917276 10.         10.         10.         10.
+ 10.         30.04251997 30.01197105 10.         10.         10.
+ 29.98275884 10.         10.         10.         30.02620202 10.
+ 10.         10.         10.         10.         29.96469716 10.
+ 29.99937714 10.         10.         10.         10.         10.
+ 10.         10.         30.06626155 10.         10.         30.05858162
+ 10.         10.         30.06728017 29.99282073 30.07026433 10.
+ 10.         10.         10.         29.98611077 10.         30.08679192
+ 30.01440444 10.         10.         29.91793272] pred: [1.56634057]
+Episode: 12  Reward: -251057.680597 Explore: 0.06
+action:[35.         20.         35.         20.         35.         20.
+ 35.         25.         35.         20.         35.         20.
+ 35.         25.         35.         25.         35.         25.
+ 35.         25.         35.         25.         35.         25.
+ 20.         35.         25.         35.         25.         35.
+ 20.         35.         25.         35.         20.         35.
+ 20.         35.         25.         35.         20.         35.
+ 25.         35.         20.         35.         20.         35.
+ 20.         35.         20.         35.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         25.         10.         10.
+ 10.         29.96121225 10.         29.96934219 10.         10.
+ 30.00250949 29.97744009 29.96744772 10.         30.03906838 29.97959377
+ 30.02180505 30.01097112 10.         30.06182523 29.97310571 29.99121154
+ 10.         10.         10.         29.98388709 30.01350909 10.
+ 30.01246103 10.         10.         10.         10.         30.01555837
+ 10.         10.         10.         30.02759508 30.02266145 10.
+ 10.         30.03968785 10.         29.95350512 29.99349143 29.98180128
+ 10.         10.         10.         29.98987318 29.99258652 10.
+ 29.96947232 10.         10.         29.99049401 29.97214556 29.97788428
+ 10.         29.97000691 10.         10.         30.04036061 30.01040627
+ 10.         30.07028294 30.01566645 10.         30.00959146 29.96831454
+ 29.9717766  30.05067574 30.00766771 10.         10.         30.03910603
+ 10.         30.06356532 29.95665314 30.02191859 10.         29.97930477
+ 10.         30.01574701 30.00143251 10.         29.98329744 10.
+ 29.97707172 10.         30.02606702 29.9599531  29.99148296 10.
+ 30.04584616 29.95190988 10.         10.         29.97167691 10.
+ 29.98350216 29.99522569 10.         29.97744828 10.         10.
+ 10.         30.01045929 30.00294269 10.         10.         30.00239845
+ 29.98863267 29.95311206 10.         30.03253657 10.         30.01674759
+ 29.98134191 29.97128593 10.         30.10286987 10.         30.00288999
+ 30.05849151 10.         10.         10.         10.         10.
+ 30.00103268 10.         10.         30.02368602 10.         29.9653362
+ 29.97251752 29.9903602  30.00891817 10.         30.00029102 29.98846047
+ 10.         29.96546237 10.         10.         10.         10.
+ 10.         29.94673598 30.0215709  10.         10.         10.
+ 29.98073899 10.         10.         10.         29.95232878 10.
+ 10.         10.         10.         10.         29.99424623 10.
+ 29.99402334 10.         10.         10.         10.         10.
+ 10.         10.         29.95784401 10.         10.         10.
+ 10.         30.02170003 29.97664269 30.03378785 29.98231491 30.01040537
+ 10.         10.         10.         30.02628453 10.         29.98537175
+ 10.         10.         10.         29.99388764] pred: [1.56976199]
+Episode: 13  Reward: -261629.867580 Explore: 0.03
+forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source
+libifcoremd.dll    00007FF8CA1C3B58  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FF9744B1F75  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FF975BF54E0  Unknown               Unknown  Unknown
+ntdll.dll          00007FF9769E485B  Unknown               Unknown  Unknown
+PS D:\编程\DeepLearningBigHomework> ^C
+PS D:\编程\DeepLearningBigHomework> ^C
+PS D:\编程\DeepLearningBigHomework> & D:/Anaconda3/envs/IIOT/python.exe d:/编程/DeepLearningBigHomework/fuck_prediction/rl.py
+WARNING:tensorflow:From D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\compat\v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-11-27 09:32:37.205301: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-27 09:32:37.206235: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\keras\legacy_tf_layers\core.py:171: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  warnings.warn('`tf.layers.dense` is deprecated and '
+D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py:1692: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  warnings.warn('`layer.apply` is deprecated and '
+WARNING:tensorflow:From D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\training\moving_averages.py:457: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+action:[35.         20.         35.         20.         35.         20.
+ 45.85707367 25.         35.         20.         35.         20.
+ 35.         25.         43.17115217 25.         35.         25.
+ 35.         20.         35.         25.         36.2709544  25.
+ 20.         35.         20.87031994 35.         25.         35.
+ 20.         35.         25.         35.         20.         35.
+ 20.         35.         24.61872254 35.         25.         35.
+ 20.         35.         20.         35.         20.         39.55415421
+ 20.         35.         20.         35.         35.         20.
+ 65.         25.         35.         20.         53.28882877 20.
+ 35.         20.         35.         20.        ] pred: [1.57022351]
+Episode: 0  Reward: -276827.587915 Explore: 22.22
+forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source
+libifcoremd.dll    00007FF8CACA3B58  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FF9744B1F75  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FF975BF54E0  Unknown               Unknown  Unknown
+ntdll.dll          00007FF9769E485B  Unknown               Unknown  Unknown
+PS D:\编程\DeepLearningBigHomework> ^C
+PS D:\编程\DeepLearningBigHomework> ^C
+PS D:\编程\DeepLearningBigHomework> & D:/Anaconda3/envs/IIOT/python.exe d:/编程/DeepLearningBigHomework/fuck_prediction/rl.py
+WARNING:tensorflow:From D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\compat\v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-11-27 09:33:39.034359: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-27 09:33:39.035216: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\keras\legacy_tf_layers\core.py:171: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  warnings.warn('`tf.layers.dense` is deprecated and '
+D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py:1692: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  warnings.warn('`layer.apply` is deprecated and '
+WARNING:tensorflow:From D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\training\moving_averages.py:457: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+action:[35.         25.         35.         25.         37.01987195 20.
+ 35.         20.         35.         20.         39.96770473 20.
+ 35.         25.         35.         20.         46.3047112  20.
+ 35.         20.         35.         20.         35.         20.
+ 20.         35.         25.         35.         25.         35.
+ 25.         35.         25.         35.         20.         35.
+ 25.         35.         25.         35.         25.         38.43196891
+ 20.         35.         25.         65.         25.         35.
+ 25.         35.         25.         35.         35.         22.09336048
+ 35.         25.         51.23473827 25.         35.         20.
+ 35.         20.         35.         20.        ] pred: [1.57022351]
+Episode: 0  Reward: -276869.881400 Explore: 22.22
+action:[35.         20.         35.         25.         35.         20.
+ 35.         25.         38.18903313 20.         35.         20.
+ 35.         25.         35.         20.         35.         25.
+ 35.         20.         35.         20.         42.22628068 20.
+ 25.         35.73673551 25.         35.         25.         35.
+ 22.46837939 35.         25.         35.         20.         35.
+ 25.         35.         25.         35.         25.         35.
+ 20.         35.         25.         35.         21.28810003 35.
+ 25.         35.         20.         35.         35.         25.
+ 37.61999703 25.         52.25365871 25.         35.         20.
+ 35.         20.         35.         20.        ] pred: [1.56634057]
+Episode: 1  Reward: -259381.458385 Explore: 13.48
+action:[35.         25.         35.         22.76624203 35.         20.
+ 35.         25.         37.25183761 20.         35.         20.
+ 35.         25.         35.         20.         35.         25.
+ 35.         20.         35.         20.         35.         20.
+ 25.         35.         25.         35.         25.         35.
+ 25.         35.         25.         35.         20.         35.
+ 25.         35.         25.         35.         25.         40.87060569
+ 20.         35.         24.53695341 35.         25.         35.
+ 25.         35.         25.         35.         35.         23.67082615
+ 35.         20.         35.         25.         35.         20.
+ 35.         20.         35.         25.        ] pred: [1.56634057]
+Episode: 2  Reward: -251057.680597 Explore: 8.18
+action:[35.         25.         35.         25.         35.         20.
+ 35.         25.         35.         20.         35.         20.
+ 35.         25.         35.         20.         36.3661668  25.
+ 35.         20.         35.         20.         35.         20.
+ 25.         35.         24.01528499 35.         25.         35.
+ 25.         35.         25.         35.         20.         35.
+ 25.         35.         25.         35.         23.4086872  35.
+ 20.         35.         25.         35.         25.         35.
+ 25.         35.         25.         35.         35.82918609 25.
+ 35.82530806 25.         35.         25.         35.         20.
+ 35.         20.         35.         25.        ] pred: [1.56634057]
+Episode: 3  Reward: -251057.680597 Explore: 4.96
+action:[35.         25.         35.         25.         35.         20.
+ 35.         24.14927823 35.         20.         35.         20.
+ 35.         25.         35.         20.         35.         25.
+ 35.         20.         35.         20.         35.         20.
+ 25.         35.         25.         35.         25.         35.
+ 25.         35.         25.         35.         20.         35.
+ 25.         35.         25.         35.         25.         35.
+ 20.         35.         25.         35.         25.         35.
+ 23.83679874 35.         25.         35.         35.         25.
+ 36.31626459 25.         35.         25.         35.         20.
+ 35.         20.         35.         25.        ] pred: [1.56634057]
+Episode: 4  Reward: -251057.680597 Explore: 3.01
+action:[35. 25. 35. 25. 35. 20. 35. 25. 35. 20. 35. 20. 35. 25. 35. 20. 35. 25.
+ 35. 20. 35. 20. 35. 20. 25. 35. 25. 35. 25. 35. 25. 35. 25. 35. 20. 35.
+ 25. 35. 25. 35. 25. 35. 20. 35. 25. 35. 25. 35. 25. 35. 25. 35. 35. 25.
+ 35. 25. 35. 25. 35. 20. 35. 20. 35. 25.] pred: [1.56634057]
+Episode: 5  Reward: -251057.680597 Explore: 1.82
+action:[35. 25. 35. 25. 35. 20. 35. 25. 35. 20. 35. 20. 35. 25. 35. 20. 35. 25.
+ 35. 20. 35. 20. 35. 20. 25. 35. 25. 35. 25. 35. 25. 35. 25. 35. 20. 35.
+ 25. 35. 25. 35. 25. 35. 20. 35. 25. 35. 25. 35. 25. 35. 25. 35. 35. 25.
+ 35. 25. 35. 25. 35. 20. 35. 20. 35. 25.] pred: [1.56634057]
+Episode: 6  Reward: -251057.680597 Explore: 1.11
+action:[35. 25. 35. 25. 35. 20. 35. 25. 35. 20. 35. 20. 35. 25. 35. 20. 35. 25.
+ 35. 20. 35. 20. 35. 20. 25. 35. 25. 35. 25. 35. 25. 35. 25. 35. 20. 35.
+ 25. 35. 25. 35. 25. 35. 20. 35. 25. 35. 25. 35. 25. 35. 25. 35. 35. 25.
+ 35. 25. 35. 25. 35. 20. 35. 20. 35. 25.] pred: [1.56634057]
+Episode: 7  Reward: -251057.680597 Explore: 0.67
+action:[35. 25. 35. 25. 35. 20. 35. 25. 35. 20. 35. 20. 35. 25. 35. 20. 35. 25.
+ 35. 20. 35. 20. 35. 20. 25. 35. 25. 35. 25. 35. 25. 35. 25. 35. 20. 35.
+ 25. 35. 25. 35. 25. 35. 20. 35. 25. 35. 25. 35. 25. 35. 25. 35. 35. 25.
+ 35. 25. 35. 25. 35. 20. 35. 20. 35. 25.] pred: [1.56634057]
+Episode: 8  Reward: -251057.680597 Explore: 0.41
+action:[35. 25. 35. 25. 35. 20. 35. 25. 35. 20. 35. 20. 35. 25. 35. 20. 35. 25.
+ 35. 20. 35. 20. 35. 20. 25. 35. 25. 35. 25. 35. 25. 35. 25. 35. 20. 35.
+ 25. 35. 25. 35. 25. 35. 20. 35. 25. 35. 25. 35. 25. 35. 25. 35. 35. 25.
+ 35. 25. 35. 25. 35. 20. 35. 20. 35. 25.] pred: [1.56634057]
+Episode: 9  Reward: -251057.680597 Explore: 0.25
+action:[35. 25. 35. 25. 35. 20. 35. 25. 35. 20. 35. 20. 35. 25. 35. 20. 35. 25.
+ 35. 20. 35. 20. 35. 20. 25. 35. 25. 35. 25. 35. 25. 35. 25. 35. 20. 35.
+ 25. 35. 25. 35. 25. 35. 20. 35. 25. 35. 25. 35. 25. 35. 25. 35. 35. 25.
+ 35. 25. 35. 25. 35. 20. 35. 20. 35. 25.] pred: [1.56634057]
+Episode: 10  Reward: -251057.680597 Explore: 0.15
+action:[35. 25. 35. 25. 35. 20. 35. 25. 35. 20. 35. 25. 35. 20. 35. 20. 35. 25.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 25. 35. 25. 35. 25. 35. 20. 35.
+ 25. 35. 25. 35. 25. 35. 25. 35. 20. 35. 25. 35. 25. 35. 25. 35. 35. 20.
+ 35. 25. 35. 25. 35. 25. 35. 20. 35. 25.] pred: [1.56634057]
+Episode: 11  Reward: -251057.680597 Explore: 0.09
+action:[35. 25. 35. 25. 35. 20. 35. 25. 35. 20. 35. 25. 35. 20. 35. 20. 35. 25.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 25. 35. 25. 35. 25. 35. 20. 35.
+ 25. 35. 25. 35. 25. 35. 25. 35. 20. 35. 25. 35. 25. 35. 25. 35. 35. 20.
+ 35. 25. 35. 25. 35. 25. 35. 20. 35. 25.] pred: [1.56634057]
+Episode: 12  Reward: -251057.680597 Explore: 0.06
+action:[35. 25. 35. 25. 35. 20. 35. 25. 35. 20. 35. 25. 35. 20. 35. 20. 35. 25.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 25. 35. 25. 35. 25. 35. 20. 35.
+ 25. 35. 25. 35. 25. 35. 25. 35. 20. 35. 25. 35. 25. 35. 25. 35. 35. 20.
+ 35. 25. 35. 25. 35. 25. 35. 20. 35. 25.] pred: [1.56976199]
+Episode: 13  Reward: -261643.553259 Explore: 0.03
+action:[35. 25. 35. 25. 35. 20. 35. 25. 35. 20. 35. 25. 35. 20. 35. 20. 35. 25.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 25. 35. 25. 35. 25. 35. 20. 35.
+ 25. 35. 25. 35. 25. 35. 25. 35. 20. 35. 25. 35. 25. 35. 25. 35. 35. 20.
+ 35. 25. 35. 25. 35. 25. 35. 20. 35. 25.] pred: [1.56976199]
+Episode: 14  Reward: -268164.779274 Explore: 0.02
+action:[35. 25. 35. 25. 35. 20. 35. 25. 35. 20. 35. 25. 35. 20. 35. 20. 35. 25.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 25. 35. 25. 35. 25. 35. 20. 35.
+ 25. 35. 25. 35. 25. 35. 25. 35. 20. 35. 25. 35. 25. 35. 25. 35. 35. 20.
+ 35. 25. 35. 25. 35. 25. 35. 20. 35. 25.] pred: [1.56976199]
+Episode: 15  Reward: -268164.779274 Explore: 0.01
+action:[35. 25. 35. 25. 35. 20. 35. 25. 35. 20. 35. 25. 35. 20. 35. 20. 35. 25.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 25. 35. 25. 35. 25. 35. 20. 35.
+ 25. 35. 25. 35. 25. 35. 25. 35. 20. 35. 25. 35. 25. 35. 25. 35. 35. 20.
+ 35. 25. 35. 25. 35. 25. 35. 20. 35. 25.] pred: [1.56976199]
+Episode: 16  Reward: -268164.779274 Explore: 0.01
+action:[35. 25. 35. 25. 35. 20. 35. 25. 35. 20. 35. 25. 35. 20. 35. 20. 35. 25.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 25. 35. 25. 35. 25. 35. 20. 35.
+ 25. 35. 25. 35. 25. 35. 25. 35. 20. 35. 25. 35. 25. 35. 25. 35. 35. 20.
+ 35. 25. 35. 25. 35. 25. 35. 20. 35. 25.] pred: [1.56976199]
+Episode: 17  Reward: -268164.779274 Explore: 0.00
+action:[35. 25. 35. 25. 35. 20. 35. 25. 35. 20. 35. 25. 35. 20. 35. 20. 35. 25.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 25. 35. 25. 35. 25. 35. 20. 35.
+ 25. 35. 25. 35. 25. 35. 25. 35. 20. 35. 25. 35. 25. 35. 25. 35. 35. 20.
+ 35. 25. 35. 25. 35. 25. 35. 20. 35. 25.] pred: [1.56976199]
+Episode: 18  Reward: -268164.779274 Explore: 0.00
+action:[35. 25. 35. 25. 35. 20. 35. 25. 35. 25. 35. 20. 35. 20. 35. 20. 35. 25.
+ 35. 20. 35. 20. 35. 25. 20. 35. 25. 35. 25. 35. 25. 35. 25. 35. 20. 35.
+ 20. 35. 20. 35. 25. 35. 20. 35. 20. 35. 25. 35. 25. 35. 25. 35. 35. 25.
+ 35. 25. 35. 25. 35. 25. 35. 20. 35. 25.] pred: [1.56976199]
+Episode: 19  Reward: -268164.779274 Explore: 0.00
+action:[35. 25. 35. 25. 35. 20. 35. 25. 35. 25. 35. 20. 35. 20. 35. 20. 35. 25.
+ 35. 20. 35. 20. 35. 25. 20. 35. 25. 35. 25. 35. 25. 35. 25. 35. 20. 35.
+ 20. 35. 20. 35. 25. 35. 20. 35. 20. 35. 25. 35. 25. 35. 25. 35. 35. 25.
+ 35. 25. 35. 25. 35. 25. 35. 20. 35. 25.] pred: [1.56976199]
+Episode: 20  Reward: -268164.779274 Explore: 0.00
+action:[35. 25. 35. 25. 35. 20. 35. 25. 35. 25. 35. 25. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 25. 20. 35. 25. 35. 25. 35. 20. 35. 25. 35. 20. 35.
+ 25. 35. 20. 35. 25. 35. 25. 35. 20. 35. 25. 35. 25. 35. 25. 35. 35. 25.
+ 35. 25. 35. 25. 35. 25. 35. 20. 35. 25.] pred: [1.56976199]
+Episode: 21  Reward: -268164.779274 Explore: 0.00
+action:[35. 25. 35. 25. 35. 20. 35. 25. 35. 25. 35. 25. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 25. 20. 35. 25. 35. 25. 35. 20. 35. 25. 35. 20. 35.
+ 25. 35. 20. 35. 25. 35. 25. 35. 20. 35. 25. 35. 25. 35. 25. 35. 35. 25.
+ 35. 25. 35. 25. 35. 25. 35. 20. 35. 25.] pred: [1.56976199]
+Episode: 22  Reward: -268164.779274 Explore: 0.00
+forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source
+libifcoremd.dll    00007FF8CA8E3B58  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FF9744B1F75  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FF975BF54E0  Unknown               Unknown  Unknown
+ntdll.dll          00007FF9769E485B  Unknown               Unknown  Unknown
+PS D:\编程\DeepLearningBigHomework> ^C
+PS D:\编程\DeepLearningBigHomework> ^C
+PS D:\编程\DeepLearningBigHomework> & D:/Anaconda3/envs/IIOT/python.exe d:/编程/DeepLearningBigHomework/fuck_prediction/rl.py
+WARNING:tensorflow:From D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\compat\v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-11-27 09:51:09.752902: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-27 09:51:09.753740: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\keras\legacy_tf_layers\core.py:171: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  warnings.warn('`tf.layers.dense` is deprecated and '
+D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py:1692: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  warnings.warn('`layer.apply` is deprecated and '
+WARNING:tensorflow:From D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\training\moving_averages.py:457: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+action:[35.         20.         35.         25.         35.         20.
+ 35.         20.         35.         25.         35.         20.
+ 35.         23.29551827 41.47632505 24.36943695 35.         20.
+ 35.         25.         35.         20.         35.         20.
+ 20.         35.         20.         35.         20.         35.
+ 20.         35.         20.         35.         25.         35.
+ 20.         42.38967561 25.         35.         20.         35.
+ 20.         40.91234423 20.         35.         20.         35.
+ 24.61905573 35.         25.         52.38159765 35.         20.
+ 35.         25.         36.32305239 20.         35.         20.
+ 35.         20.         35.         20.        ] pred: [1.54908016]
+Episode: 0  Reward: -164716.172474 Explore: 24.56
+action:[35.         20.         35.         20.         35.         20.
+ 35.         20.04647792 35.         20.         35.         20.
+ 35.         20.         35.         25.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 20.         35.         20.         35.         20.         35.
+ 20.         35.         20.         35.         20.         35.
+ 20.         35.         20.         35.         20.         35.
+ 20.         35.         20.         35.         23.44113929 35.
+ 20.         35.         25.         35.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         20.        ] pred: [1.54908016]
+Episode: 1  Reward: -164755.651693 Explore: 14.90
+action:[35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         22.89631712 35.         20.
+ 20.         35.         25.         35.         20.         35.
+ 20.         35.         20.         35.         20.         35.
+ 20.         35.         20.         35.         20.         35.
+ 20.         35.         20.         35.         25.         35.
+ 20.         35.         20.         35.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         20.        ] pred: [1.54748821]
+Episode: 2  Reward: -162206.940204 Explore: 9.04
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.54748821]
+Episode: 3  Reward: -156795.903134 Explore: 5.48
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.54748821]
+Episode: 4  Reward: -156795.903134 Explore: 3.32
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.54748821]
+Episode: 5  Reward: -156795.903134 Explore: 2.02
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.54748821]
+Episode: 6  Reward: -156795.903134 Explore: 1.22
+forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source
+libifcoremd.dll    00007FF8FC413B58  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FF9744B1F75  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FF975BF54E0  Unknown               Unknown  Unknown
+ntdll.dll          00007FF9769E485B  Unknown               Unknown  Unknown
+PS D:\编程\DeepLearningBigHomework> ^C
+PS D:\编程\DeepLearningBigHomework> & D:/Anaconda3/envs/IIOT/python.exe d:/编程/DeepLearningBigHomework/reinforcement/environment.py
+PS D:\编程\DeepLearningBigHomework> & D:/Anaconda3/envs/IIOT/python.exe d:/编程/DeepLearningBigHomework/fuck_prediction/rl.py
+WARNING:tensorflow:From D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\compat\v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-11-27 09:57:20.235717: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-27 09:57:20.236576: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\keras\legacy_tf_layers\core.py:171: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  warnings.warn('`tf.layers.dense` is deprecated and '
+D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py:1692: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  warnings.warn('`layer.apply` is deprecated and '
+WARNING:tensorflow:From D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\training\moving_averages.py:457: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+action:[42.39334206 25.         35.         20.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         25.         35.         20.
+ 20.         35.         20.         35.         20.21253885 35.
+ 20.         35.         20.         42.18592392 25.         35.
+ 20.         35.         20.         35.         20.         35.
+ 25.         35.         25.         35.         20.         35.
+ 20.         35.         20.         35.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         25.        ] pred: [1.52338698]
+Episode: 0  Reward: 315665.144412 Explore: 24.56
+action:[35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         20.         35.         25.
+ 35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 20.         35.         20.         35.         20.         35.
+ 20.         35.         20.         35.         20.         35.
+ 20.         35.         25.         35.         20.         35.
+ 22.0806661  35.         20.         35.         25.         35.
+ 20.         35.         20.         35.         35.         20.
+ 35.         20.36744727 35.         20.         35.         20.
+ 35.         25.         35.         20.        ] pred: [1.52338698]
+Episode: 1  Reward: 315336.009032 Explore: 14.90
+action:[35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         20.76164378 35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 20.         35.         20.         35.         20.         35.
+ 20.         35.         20.         35.         20.         35.
+ 20.         35.         20.         35.         20.         35.
+ 20.         35.         20.         35.         20.         35.
+ 20.         35.         20.         35.         35.         20.
+ 35.         23.2101271  35.         25.         35.         20.
+ 35.         20.         35.         20.        ] pred: [1.52338698]
+Episode: 2  Reward: 315336.009032 Explore: 9.04
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.52338698]
+Episode: 3  Reward: 315336.009032 Explore: 5.48
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.52338698]
+Episode: 4  Reward: 315336.009032 Explore: 3.32
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.52338698]
+Episode: 5  Reward: 315336.009032 Explore: 2.02
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.52338698]
+Episode: 6  Reward: 315336.009032 Explore: 1.22
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.52338698]
+Episode: 7  Reward: 315336.009032 Explore: 0.74
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.52338698]
+Episode: 8  Reward: 315336.009032 Explore: 0.45
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.52338698]
+Episode: 9  Reward: 315336.009032 Explore: 0.27
+Running time:  435.6750681400299
+PS D:\编程\DeepLearningBigHomework> & D:/Anaconda3/envs/IIOT/python.exe d:/编程/DeepLearningBigHomework/fuck_prediction/rl.py
+WARNING:tensorflow:From D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\compat\v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-11-27 11:01:16.567776: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-27 11:01:16.568852: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\keras\legacy_tf_layers\core.py:171: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  warnings.warn('`tf.layers.dense` is deprecated and '
+D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py:1692: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  warnings.warn('`layer.apply` is deprecated and '
+WARNING:tensorflow:From D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\training\moving_averages.py:457: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+action:[35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 35.         20.14210673 35.         20.         35.         20.
+ 20.         62.03351954 25.         35.         20.         53.81784893
+ 20.         35.         20.         35.         20.         35.
+ 20.         35.         20.         35.         20.         35.
+ 25.         35.         20.         42.46436283 20.         35.
+ 20.         35.         20.         35.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 65.         20.         35.         20.        ] pred: [1.52899004]
+Episode: 0  Reward: -62497.959134 Explore: 24.56
+action:[35.         20.         35.         25.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 20.         35.         20.         35.         21.02038809 35.
+ 20.         35.         20.         35.         20.         35.
+ 20.         35.         20.         35.         20.         35.
+ 20.         35.         20.         35.         20.         35.
+ 20.         35.         20.         41.97378334 35.         25.
+ 35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         20.        ] pred: [1.5300023]
+Episode: 1  Reward: -65316.913376 Explore: 14.90
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 25. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.5300023]
+Episode: 2  Reward: -67334.357308 Explore: 9.04
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.5300023]
+Episode: 3  Reward: -67334.357308 Explore: 5.48
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.52655336]
+Episode: 4  Reward: -50693.205906 Explore: 3.32
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.52535309]
+Episode: 5  Reward: -49427.280102 Explore: 2.02
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.5307835]
+Episode: 6  Reward: -65882.187976 Explore: 1.22
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.5307835]
+Episode: 7  Reward: -71240.337582 Explore: 0.74
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.5307835]
+Episode: 8  Reward: -71240.337582 Explore: 0.45
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.5307835]
+Episode: 9  Reward: -71240.337582 Explore: 0.27
+Running time:  412.4350082874298
+PS D:\编程\DeepLearningBigHomework> & D:/Anaconda3/envs/IIOT/python.exe d:/编程/DeepLearningBigHomework/fuck_prediction/rl.py
+WARNING:tensorflow:From D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\compat\v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-11-27 13:18:24.307592: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-27 13:18:24.308551: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\keras\legacy_tf_layers\core.py:171: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  warnings.warn('`tf.layers.dense` is deprecated and '
+D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py:1692: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  warnings.warn('`layer.apply` is deprecated and '
+WARNING:tensorflow:From D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\training\moving_averages.py:457: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+action:[35.         20.         35.         20.         35.         24.59664493
+ 35.         20.         35.         20.         49.31034226 20.
+ 35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         20.         41.52622897 20.
+ 20.         35.         20.         35.         20.         35.
+ 25.         35.         25.         35.         20.         35.
+ 20.         35.         20.         35.         20.         35.
+ 20.0290666  35.         20.         35.         22.68744808 35.
+ 20.         35.         20.         35.         35.         25.
+ 35.         20.         35.         20.         35.         24.60595266
+ 35.         20.         35.         20.        ] pred: [1.54188186]
+Episode: 0  Reward: -30417.381529 Explore: 24.56
+action:[35.         20.         39.60859156 20.         35.         20.
+ 35.         20.         35.         22.47582007 35.         20.
+ 35.         20.         35.         20.         35.         25.
+ 35.         25.         35.         20.         35.         20.
+ 23.41826239 35.         25.         35.         20.         35.
+ 20.         35.         20.         35.         23.66382403 35.
+ 20.88771447 35.         20.         35.         20.         35.
+ 20.00305955 35.         20.         35.         20.         37.05742163
+ 20.         35.         20.         39.22540545 35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 35.         25.         35.         20.        ] pred: [1.54188186]
+Episode: 1  Reward: -21662.249507 Explore: 14.90
+action:[35.        20.        35.        20.        35.        20.
+ 35.        20.        35.        20.        35.        20.
+ 35.        20.        35.        20.        35.        20.
+ 35.        20.        35.        20.        35.        20.
+ 20.        35.        20.        35.        22.4121213 35.
+ 20.        35.        20.        35.        20.        35.
+ 20.        35.        20.        35.        20.        35.
+ 20.        35.        20.        35.        20.        35.
+ 20.        35.        20.        35.        35.        20.
+ 35.        20.        35.        20.        35.        20.
+ 35.        25.        35.        20.       ] pred: [1.54129256]
+Episode: 2  Reward: -20176.035419 Explore: 9.04
+forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source
+libifcoremd.dll    00007FF8A46C3B58  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FF9744B1F75  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FF975BF54E0  Unknown               Unknown  Unknown
+ntdll.dll          00007FF9769E485B  Unknown               Unknown  Unknown
+PS D:\编程\DeepLearningBigHomework> ^C
+PS D:\编程\DeepLearningBigHomework> & D:/Anaconda3/envs/IIOT/python.exe d:/编程/DeepLearningBigHomework/fuck_prediction/rl.py
+WARNING:tensorflow:From D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\compat\v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-11-27 13:20:41.847026: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-27 13:20:41.847955: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\keras\legacy_tf_layers\core.py:171: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  warnings.warn('`tf.layers.dense` is deprecated and '
+D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py:1692: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  warnings.warn('`layer.apply` is deprecated and '
+WARNING:tensorflow:From D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\training\moving_averages.py:457: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+action:[35.         20.         65.         25.         35.         20.
+ 35.         25.         65.         20.         65.         25.
+ 65.         25.         65.         25.         65.         20.
+ 65.         20.         35.         20.         64.37185829 25.
+ 20.         35.         25.         35.         20.         65.
+ 25.         35.         20.         65.         20.         35.
+ 25.         35.         25.         65.         25.         65.
+ 20.         65.         25.         35.         25.         35.
+ 20.         35.         20.         65.         35.         25.
+ 65.         20.         35.         25.         35.         20.
+ 56.30280981 25.         35.         25.        ] pred: [1.52513701]
+Episode: 0  Reward: 53228.971921 Explore: 24.56
+action:[35. 20. 65. 25. 35. 20. 35. 25. 65. 20. 65. 25. 65. 25. 65. 25. 65. 20.
+ 65. 20. 35. 20. 65. 25. 20. 35. 25. 35. 20. 65. 25. 35. 20. 65. 20. 35.
+ 25. 35. 25. 65. 25. 65. 20. 65. 25. 35. 25. 35. 20. 35. 20. 35. 35. 25.
+ 65. 20. 35. 25. 35. 20. 65. 25. 35. 25.] pred: [1.52513701]
+Episode: 1  Reward: 62062.009977 Explore: 14.90
+action:[35. 20. 65. 25. 35. 20. 35. 25. 65. 20. 65. 25. 65. 25. 65. 25. 65. 20.
+ 65. 20. 35. 20. 65. 25. 20. 35. 25. 35. 20. 65. 25. 35. 20. 65. 20. 35.
+ 25. 35. 25. 65. 25. 65. 20. 65. 25. 35. 25. 35. 20. 35. 20. 35. 35. 25.
+ 65. 20. 35. 25. 35. 20. 65. 25. 35. 25.] pred: [1.52513701]
+Episode: 2  Reward: 62062.009977 Explore: 9.04
+action:[35. 20. 65. 25. 35. 20. 35. 25. 65. 20. 65. 25. 65. 25. 65. 25. 65. 20.
+ 65. 20. 35. 20. 65. 25. 20. 35. 25. 35. 20. 65. 25. 35. 20. 65. 20. 35.
+ 25. 35. 25. 65. 25. 65. 20. 65. 25. 35. 25. 35. 20. 35. 20. 35. 35. 25.
+ 65. 20. 35. 25. 35. 20. 65. 25. 35. 25.] pred: [1.52513701]
+Episode: 3  Reward: 62062.009977 Explore: 5.48
+action:[35. 20. 65. 25. 35. 20. 35. 25. 65. 20. 65. 25. 65. 25. 65. 25. 65. 20.
+ 65. 20. 35. 20. 65. 25. 20. 35. 25. 35. 20. 65. 25. 35. 20. 65. 20. 35.
+ 25. 35. 25. 65. 25. 65. 20. 65. 25. 35. 25. 35. 20. 35. 20. 35. 35. 25.
+ 65. 20. 35. 25. 35. 20. 65. 25. 35. 25.] pred: [1.52513701]
+Episode: 4  Reward: 62062.009977 Explore: 3.32
+action:[35. 20. 65. 25. 35. 20. 35. 25. 65. 20. 65. 25. 65. 25. 65. 25. 65. 20.
+ 65. 20. 35. 20. 65. 25. 20. 35. 25. 35. 20. 65. 25. 35. 20. 65. 20. 35.
+ 25. 35. 25. 65. 25. 65. 20. 65. 25. 35. 25. 35. 20. 35. 20. 35. 35. 25.
+ 65. 20. 35. 25. 35. 20. 65. 25. 35. 25.] pred: [1.52513701]
+Episode: 5  Reward: 62062.009977 Explore: 2.02
+action:[35. 20. 65. 25. 35. 20. 35. 25. 65. 20. 65. 25. 65. 25. 65. 25. 65. 20.
+ 65. 20. 35. 20. 65. 25. 20. 35. 25. 35. 20. 65. 25. 35. 20. 65. 20. 35.
+ 25. 35. 25. 65. 25. 65. 20. 65. 25. 35. 25. 35. 20. 35. 20. 35. 35. 25.
+ 65. 20. 35. 25. 35. 20. 65. 25. 35. 25.] pred: [1.52513701]
+Episode: 6  Reward: 62062.009977 Explore: 1.22
+action:[35. 20. 65. 25. 35. 20. 35. 25. 65. 20. 65. 25. 65. 25. 65. 25. 65. 20.
+ 65. 20. 35. 20. 65. 25. 20. 35. 25. 35. 20. 65. 25. 35. 20. 65. 20. 35.
+ 25. 35. 25. 65. 25. 65. 20. 65. 25. 35. 25. 35. 20. 35. 20. 35. 35. 25.
+ 65. 20. 35. 25. 35. 20. 65. 25. 35. 25.] pred: [1.52513701]
+Episode: 7  Reward: 62062.009977 Explore: 0.74
+action:[35. 20. 65. 25. 35. 20. 35. 25. 65. 20. 65. 25. 65. 25. 65. 25. 65. 20.
+ 65. 20. 35. 20. 65. 25. 20. 35. 25. 35. 20. 65. 25. 35. 20. 65. 20. 35.
+ 25. 35. 25. 65. 25. 65. 20. 65. 25. 35. 25. 35. 20. 35. 20. 35. 35. 25.
+ 65. 20. 35. 25. 35. 20. 65. 25. 35. 25.] pred: [1.52513701]
+Episode: 8  Reward: 62062.009977 Explore: 0.45
+action:[35. 20. 65. 25. 35. 20. 35. 25. 65. 20. 65. 25. 65. 25. 65. 25. 65. 20.
+ 65. 20. 35. 20. 65. 25. 20. 35. 25. 35. 20. 65. 25. 35. 20. 65. 20. 35.
+ 25. 35. 25. 65. 25. 65. 20. 65. 25. 35. 25. 35. 20. 35. 20. 35. 35. 25.
+ 65. 20. 35. 25. 35. 20. 65. 25. 35. 25.] pred: [1.52513701]
+Episode: 9  Reward: 62062.009977 Explore: 0.27
+Running time:  402.2844605445862
+PS D:\编程\DeepLearningBigHomework> & D:/Anaconda3/envs/IIOT/python.exe d:/编程/DeepLearningBigHomework/fuck_prediction/rl.py
+WARNING:tensorflow:From D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\compat\v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-11-27 14:03:33.189132: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-27 14:03:33.190155: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\keras\legacy_tf_layers\core.py:171: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  warnings.warn('`tf.layers.dense` is deprecated and '
+D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py:1692: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  warnings.warn('`layer.apply` is deprecated and '
+WARNING:tensorflow:From D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\training\moving_averages.py:457: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+action:[35.         21.73460944 35.         21.43693226 35.         25.
+ 35.         20.         35.         20.         35.         25.
+ 65.         20.         35.         20.         35.         25.
+ 44.00683292 20.         35.         20.         35.         20.
+ 20.         35.         20.58183311 35.         25.         36.51926883
+ 25.         35.         20.         35.         20.         35.
+ 20.         35.         20.         35.         25.         35.
+ 20.         65.         20.         35.         25.         48.57784541
+ 20.         35.         20.         35.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         21.70492771] pred: [1.49225185]
+Episode: 0  Reward: -89757.931453 Explore: 24.56
+action:[35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         25.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 20.         35.         20.         35.         20.         35.
+ 20.         35.         20.         35.         20.         35.
+ 23.23257653 35.         20.         35.         20.         35.
+ 20.         35.         20.         35.         20.         35.
+ 20.         35.         20.         35.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         22.64743663] pred: [1.49225185]
+Episode: 1  Reward: -89111.318410 Explore: 14.90
+action:[35.         20.         35.         21.2159099  35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 20.         35.         25.         35.         20.         35.
+ 20.         35.         20.         35.         20.         35.
+ 20.         35.         20.         35.         22.56383771 35.
+ 20.         35.         20.         35.         20.         35.
+ 20.         35.         23.34555093 35.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         20.        ] pred: [1.49225185]
+Episode: 2  Reward: -89111.318410 Explore: 9.04
+action:[35.         20.         35.         20.         35.         21.30617405
+ 35.         20.         35.         20.         35.         21.20905219
+ 35.         20.         35.         20.75117089 35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 20.         35.         20.         35.         20.         35.
+ 20.         35.         20.         35.         20.         35.
+ 20.         35.         20.         35.         20.         35.
+ 20.         35.         20.         35.         20.         35.
+ 20.         35.         20.         35.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         20.        ] pred: [1.49409292]
+Episode: 3  Reward: -91642.792418 Explore: 5.48
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.49409292]
+Episode: 4  Reward: -98316.678439 Explore: 3.32
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.49594338]
+Episode: 5  Reward: -102021.301044 Explore: 2.02
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.49594338]
+Episode: 6  Reward: -107568.982647 Explore: 1.22
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.49594338]
+Episode: 7  Reward: -107568.982647 Explore: 0.74
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.49594338]
+Episode: 8  Reward: -107568.982647 Explore: 0.45
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.49594338]
+Episode: 9  Reward: -107568.982647 Explore: 0.27
+Running time:  439.3690321445465
+PS D:\编程\DeepLearningBigHomework> & D:/Anaconda3/envs/IIOT/python.exe d:/编程/DeepLearningBigHomework/fuck_prediction/rl.py
+be removed in a future version.Instructions for updating:
+non-resource variables are not supported in the long term
+2021-11-27 14:12:30.606303: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-27 14:12:30.607267: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\keras\legacy_tf_layers\core.py:171: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.  warnings.warn('`tf.layers.dense` is deprecated and '
+D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py:1692: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.  warnings.warn('`layer.apply` is deprecated and '
+WARNING:tensorflow:From D:\Anaconda3\envs\IIOT\lib\site-packages\tensorflow\python\training\moving_averages.py:457: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+action:[35.         20.         35.         20.         35.         25.
+ 35.         20.         35.         22.06979554 35.         20.
+ 35.         25.         35.         24.05864897 35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 20.         40.63679788 20.         35.         20.         35.
+ 20.         35.         20.         43.35158364 25.         35.
+ 25.         35.         20.         35.         20.         35.
+ 25.         35.         20.         35.         20.         37.25670758
+ 20.         35.         21.39556526 35.         38.30237627 20.
+ 35.         20.         35.         25.         35.         20.
+ 42.25702853 20.         35.         20.        ] pred: [1.51205316]
+Episode: 0  Reward: 98097.359849 Explore: 24.56
+action:[35. 20. 35. 20. 35. 20. 35. 25. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 25. 35. 20. 35. 25. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 25. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.51205316]
+Episode: 1  Reward: 98212.792845 Explore: 14.90
+action:[35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 20.         35.         20.         35.         21.82115744 35.
+ 20.         35.         20.         35.         20.         35.
+ 20.         35.         20.         35.         20.         35.
+ 25.         35.         20.         35.         20.         35.
+ 20.         35.         20.         35.         35.         20.
+ 35.         20.         35.         20.         35.         20.
+ 35.         20.         35.         20.        ] pred: [1.51205316]
+Episode: 2  Reward: 98212.792845 Explore: 9.04
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.51205316]
+Episode: 3  Reward: 98212.792845 Explore: 5.48
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.51205316]
+Episode: 4  Reward: 98212.792845 Explore: 3.32
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.51205316]
+Episode: 5  Reward: 98212.792845 Explore: 2.02
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.52304191]
+Episode: 6  Reward: 89832.568412 Explore: 1.22
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.52304191]
+Episode: 7  Reward: 43269.052779 Explore: 0.74
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.52304191]
+Episode: 8  Reward: 43269.052779 Explore: 0.45
+action:[35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.
+ 35. 20. 35. 20. 35. 20. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35.
+ 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 20. 35. 35. 20.
+ 35. 20. 35. 20. 35. 20. 35. 20. 35. 20.] pred: [1.52304191]
+Episode: 9  Reward: 43269.052779 Explore: 0.27
+Running time:  473.1799702644348
