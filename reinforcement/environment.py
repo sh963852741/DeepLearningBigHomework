@@ -29,11 +29,11 @@ class PUEEnviroment(object):
         return self.y[self.current_position], self.model.predict([self.X[self.current_position, :]])[0]
 
     def step(self, action_change: np.ndarray) -> tuple([np.ndarray, float, bool]):
-        # row = self.X[self.current_position]
+        row = self.X[self.current_position][64:]
         # row = np.delete(row, [x for x in range(0,64)])
         # self.current_action += self.current_action + action_change
-        # row = np.hstack((self.current_action, row))
-        row = action_change
+        row = np.hstack((action_change, row))
+        # row = action_change
         # zero = np.zeros(row.shape)
         pred = self.model.predict([row])
         reward = (self.y[self.current_position] - pred[0])
